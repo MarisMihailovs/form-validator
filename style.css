@@ -1,9 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 
 html {
   box-sizing: border-box;
+
 }
 
 body {
   margin: 0;
   min-height: 100vh;
+  font-family: 'Cairo', sans-serif;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: white;
+}
+
+.background-image {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1629808363515-bdfbd573c356?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(80%);
+}
+
+.container {
+  width: 30%;
+  height: 80%;
+  z-index: 10;
+  display: flex;
+  --glass-lightness: 90%;
+  background: hsl(0 0% var(--glass-lightness) / 70%);
+  backdrop-filter: blur(5px);
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* form styling */
+
+form {
+  width: 90%;
+  align-items: center;
+}
+
+.form-group {
+  height: 65px;
+}
+
+label {
+  position: relative;
+  bottom: 3px;
+}
+
+input {
+  width: 100%;
+  height: 34px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+input:valid {
+  border: 1px solid green;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+button {
+  cursor: pointer;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid white;
+  border-radius: 5px;
+  height: 50px;
+  width: 70%;
+  font-family: Cairo, sans-serif;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+button:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.wrapper {
+  text-align: center;
 }
