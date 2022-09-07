@@ -38,7 +38,7 @@ h1 {
   z-index: 10;
   display: flex;
   --glass-lightness: 90%;
-  background: hsl(0 0% var(--glass-lightness) / 70%);
+  background: hsl(0 0% var(--glass-lightness) / 30%);
   backdrop-filter: blur(5px);
   flex-direction: column;
   align-items: center;
